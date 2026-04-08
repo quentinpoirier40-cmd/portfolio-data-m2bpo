@@ -1,3 +1,21 @@
+# ── SECRETS GOOGLE CLOUD ──────────────────────────────────────
+*.json
+*service_account*
+*7daf9c*
+credentials/
+
+# ── DONNEES CLIENTS (ne jamais partager) ──────────────────────
+*.csv
+*.xlsx
+*.parquet
+
+# ── NOTEBOOKS AVEC OUTPUTS (peuvent contenir des données) ──────
+*.ipynb
+
+# ── FICHIERS DE CONFIG LOCAUX ─────────────────────────────────
+config.py
+config_local.py
+secrets.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
