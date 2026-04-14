@@ -41,5 +41,3 @@ pour comparer les courbes entre types de marchés.
 - 62 segments à cycle annuel, 41 à cycle bi-annuel,
   24 à cycle tri-annuel
 - Pic dominant en **Q1 (janvier-mars)** sur 55% des segments
-
-## Structure du repo
