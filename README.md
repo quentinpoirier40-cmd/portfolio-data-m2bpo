@@ -41,3 +41,17 @@ pour comparer les courbes entre types de marchés.
 - 62 segments à cycle annuel, 41 à cycle bi-annuel,
   24 à cycle tri-annuel
 - Pic dominant en **Q1 (janvier-mars)** sur 55% des segments
+- **137 segments cycliques** identifiés sur 10 ans.
+- **Cycle annuel (période 4 trimestres)** – le plus fréquent (62 segments), avec un score de fiabilité maximal à **0.854** (segment *Logement / Bâtiment / MOP*).
+- **Pic d’activité** : 55 % des segments cycliques enregistrent leur maximum au **1er trimestre** (janvier‑mars).
+- **Délais de réponse** : industrialisation d’un scoring d’urgence (`montant / délai`) pour détecter les opportunités sous pression.
+- **Impact électoral** : mise en évidence d’un *gel pré‑électoral* (S-1 à S0) suivi d’un *rebond* systématique à partir de S+2 – avec des sensibilités très différentes selon les couples `MO_type × procédure`.
+
+- 📦 M2BPO_public_analysis/
+├── 01_nettoyage_donnees/          # Scripts Python + SQL (encodage, doublons, tables flat)
+├── 02_analyse_cycles/             # Détection FFT + seasonal_decompose (v4, v5)
+├── 03_bigquery_sql/               # Vues finales, enrichissement (indices, élections, géo)
+├── 04_looker_studio/              # Capture du dashboard + explications des pages
+├── 05_analyses_correlations/      # Corrélations entre volume d'annonces et facteurs exogènes
+├── data_samples/                  # Échantillons anonymisés (optionnel)
+└── README.md
